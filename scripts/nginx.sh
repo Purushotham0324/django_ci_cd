@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo cp -rf app.conf /etc/nginx/sites-available/app
+cp -rf app.conf /etc/nginx/sites-available/app
 chmod 710  /var/jenkins_home/workspace/django_ci_cd-Project/app
 
 ln -s /etc/nginx/sites-available/app /etc/nginx/sites-enabled
