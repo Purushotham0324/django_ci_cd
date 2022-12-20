@@ -6,7 +6,7 @@ pipeline{
        
       steps  {
             sh '''
-            chmod 0777 envsetup.sh
+            chmod +x envsetup.sh
             ./envsetup.sh
             '''}
         }
