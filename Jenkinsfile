@@ -6,8 +6,8 @@ pipeline{
        
       steps  {
              sh '''
-                chmod +x gunicorn.sh
-                ./envsetup.sh
+                chmod +x ./scripts/envsetup.sh
+                ./scripts/envsetup.sh
                 '''
            }
         }
