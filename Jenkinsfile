@@ -5,10 +5,8 @@ pipeline{
         stage('Setup Python Virtual ENV'){
        
       steps  {
-            sh '''
-            chmod +x envsetup.sh
-            ./envsetup.sh
-            '''}
+            sh './scripts/envsetup.sh'
+           }
         }
         stage('Setup Gunicorn Setup'){
             steps {
